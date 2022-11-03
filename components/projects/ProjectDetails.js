@@ -57,7 +57,7 @@ const ProjectDetails = ({project}) => {
                 <div className={style.cardSection}>
                     <h4 className={style.cardSectionTitle}>Features</h4>
                     <ul className={style.projectFeature}>{project.features?.split("-").map(feature => (
-                        <li>{feature}</li>
+                        <li key={feature}>{feature}</li>
                     ))}</ul>
                 </div>
 
@@ -72,7 +72,7 @@ const ProjectDetails = ({project}) => {
                     </div>
 
                     <ul className={style.projectFeature}>{project.tools?.split("-").map(tool => (
-                        <li>{tool}</li>
+                        <li key={tool}>{tool}</li>
                     ))}</ul>
                 </div>
 
@@ -84,7 +84,7 @@ const ProjectDetails = ({project}) => {
                 <div className={style.cardSection}>
                     <h4 className={style.cardSectionTitle}>Future work</h4>
                     <ul className={style.projectFeature}>{project.improvement?.split("-").map(feature => (
-                        <li>{feature}</li>
+                        <li key={feature}>{feature}</li>
                     ))}</ul>
                 </div>
             </div>
