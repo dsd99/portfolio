@@ -12,7 +12,7 @@ const Nav = () => {
 
     const style = {
         logo: `text-3xl font-bold text-teal-500`,
-        navPrimary: `fixed top-0 right-0 left-0 flex place-content-between items-center py-4 px-8 lg:px-20 bg-transparent border-light z-10`,
+        navPrimary: `fixed top-0 right-0 left-0 flex place-content-between items-center py-4 px-8 lg:px-20 bg-zinc-900 opacity-90 border-light z-10`,
         navSecondary: `sm:hidden ${isActive ? "-translate-x-full" : "-translate-x-0"} 
                        fixed bottom-0 top-0 left-0 w-full bg-zinc-900 opacity-90 z-30 transition-transform duration-700`,
         navPrimaryContainer: `sm:flex gap-8 hidden`,
